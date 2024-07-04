@@ -16,15 +16,17 @@ pages = {
 }
 
 stylekit = {
-    "color_primary": "rgb(0, 123, 255)",  # A blue-ish primary color
-    "color_secondary": "rgb(255, 193, 7)",  # Example secondary color
-    "color_background_light": "rgb(240, 248, 255)",  # A light blue background for the light theme
-    "color_background_dark": "rgb(29, 36, 75)",  # Dark blue for dark theme background
-    "color_paper_dark": "rgb(55, 55, 55)",  # Darker grey for elevated elements in dark theme
+    "color_primary": "rgb(140, 110, 80)",  # A rich brown color reminiscent of beer
+    "color_secondary": "rgb(200, 180, 140)",  # A lighter complementary color
+    "color_background_light": "rgb(255, 248, 240)",  # A warm light background for the light theme
+    "color_background_dark": "rgb(50, 40, 30)",  # Dark brown for dark theme background
+    "color_paper_dark": "rgb(75, 65, 55)",  # Darker brown for elevated elements in dark theme
     "color_paper_light": "rgb(255, 255, 255)",  # White for elevated elements in light theme
-    "color-contrast-dark": "rgb(248, 217, 217)", # Contrasting elements (such as text) color for dark backgrounds
-    "color-contrast-light": "rgb(43, 15, 58)", # Contrasting elements (such as text) color for light backgrounds
-    "font_family": "'Roboto', sans-serif",  # Example font family
+    "color-contrast-dark": "rgb(255, 235, 205)",  # Cream color for contrasting elements on dark backgrounds
+    "color-contrast-light": "rgb(50, 40, 30)",  # Dark brown for contrasting elements on light backgrounds
+    "color_background_odd_row": "#f2f2f2",  # Light grey for odd row background
+    "color_text_odd_row": "#333333",  # Dark grey for odd row text
+    "font_family": "'Georgia', serif",  # A font that gives a classic feel
     # ... other style properties ...
 }
 
