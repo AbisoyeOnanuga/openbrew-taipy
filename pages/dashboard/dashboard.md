@@ -31,12 +31,12 @@
 |>
 
 <|card|
-**Website**{: .color-primary}
-<|{data_brewery.iloc[0]['Website Link']}|text|class_name=h2|>
+**Google Maps**{: .color-primary}
+<|{google_maps_md}|text|class_name=h2|>
 |>
 
 <|card|
-**Google Maps**{: .color-primary}
-<|{data_brewery.iloc[0]['Google Maps Link']}|text|class_name=h2|>
+**Website**{: .color-primary}
+<|{website_md}|text|class_name=h2|>
 |>
 |>
