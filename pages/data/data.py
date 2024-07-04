@@ -20,15 +20,12 @@ def fetch_data():
     data.columns = ['Name', 'Type', 'Street', 'City', 'State', 'Postal Code', 'Country', 'Longitude', 'Latitude', 'Phone', 'Website']
 
     # Add Google Maps and website links to the data with HTML syntax
-    data['Google Maps Link'] = data.apply(lambda row: "Google Maps Link: https://www.google.com/maps/search/?api=1&query=" + str(row['Latitude']) + "," + str(row['Longitude']), axis=1)
+    data['Google Maps Link'] = data.apply(lambda row: "https://www.google.com/maps/search/?api=1&query=" + str(row['Latitude']) + "," + str(row['Longitude']), axis=1)
 
     # Add Google Maps and website links to the data with Markdown syntax
     data['Google Maps'] = data.apply(lambda row: f"[View map]({row['Google Maps Link']})", axis=1)
     #data['Website Link'] = data.apply(lambda row: f"[{row['Name']} Website]({row['Website']})" if row['Website'] else "No Website", axis=1)
-    data = data.drop(columns=["Longitude"])
-    data = data.drop(columns=["Latitude"])
-    #data = data.drop(columns=['Website'])
-
+    
     return data
 
 def prepare_map_data(data):
