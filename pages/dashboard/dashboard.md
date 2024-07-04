@@ -32,11 +32,11 @@
 
 <|card|
 **Google Maps**{: .color-primary}
-<|{google_maps_md}|text|class_name=h2|>
+<|{data_brewery.iloc[0]['Google Maps Link']}|text|class_name=h2|>
 |>
 
 <|card|
 **Website**{: .color-primary}
-<|{website_md}|text|class_name=h2|>
+<|{data_brewery.iloc[0]['Website']}|text|class_name=h2|>
 |>
 |>
