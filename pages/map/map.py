@@ -13,9 +13,9 @@ hoverlabel = {
 }
 
 marker = {
-    "size": map_data["size"],
-    "color": map_data["color"],
-    "text": map_data["text"],
+    "size": "size",
+    "color": "color",
+    "text": "text",
     "textposition": "bottom center",
     "hoverinfo": "text",
     "hoverlabel": hoverlabel
@@ -29,7 +29,108 @@ layout = {
         "countrycolor": "darkgrey",
         "fitbounds": "locations",
         "projection_type": "mercator"
-    }
+    },
+        "annotations": [
+        {
+            "x": 1.0,
+            "y": 1.2,
+            "xref": "paper",
+            "yref": "paper",
+            "text": "Type of Brewery",
+            "showarrow": False,
+            "font": {"size": 24}
+        },
+        {
+            "x": 0.96,
+            "y": 1.0,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Micro",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#6f4e37"}
+        },
+        {
+            "x": 0.94,
+            "y": 0.8,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Nano",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#ffd700"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.7,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Regional",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#0000ff"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.6,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Brewpub",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#ff4500"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.55,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Large",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#808080"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.45,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Planning",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#008000"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.35,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Bar",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#808080"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.2,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Contract",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#800080"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.1,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Proprietor",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#ffa500"}
+        },
+        {
+            "x": 0.96,
+            "y": 0.05,  # Adjusted for more spacing
+            "xref": "paper",
+            "yref": "paper",
+            "text": "● Closed",  # Larger bullet point using Unicode
+            "showarrow": False,
+            "font": {"size": 16, "color": "#ff0000"}
+        }
+    ]
 }
 
 map_md = Markdown("pages/map/map.md")
