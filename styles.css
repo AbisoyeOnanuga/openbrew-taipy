@@ -3,6 +3,12 @@
     --border-radius-large: calc(var(--border-radius) * 2);
     --box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     --border-radius: 10px;
+    --color-background-odd-row: #f2f2f2; /* Light grey for odd row background */
+    --color-text-odd-row: #333333; /* Dark grey for odd row text */
+}
+
+.taipy-table tr:nth-child(odd) {
+    color: var(--color-text-odd-row); /* Use a variable for odd row text */
 }
 
 /* Style adjustments for a brewery-themed card */
@@ -24,9 +30,6 @@
         background: rgba(200, 180, 140, 0.5);  /* Darker background on hover */
         border: 1px solid rgba(140, 110, 80, 0.8);
     }
-    .taipy-table tr:nth-child(odd) {
-        background-color: rgb(255, 248, 240);  /* Light background for odd rows */
-    }
     .taipy-table tr:nth-child(even) {
         background-color: rgba(200, 180, 140, 0.5);  /* Slightly darker for even rows */
     }
@@ -36,11 +39,10 @@
 @media (prefers-color-scheme: dark) {
     .taipy-table tr:nth-child(odd) {
         background-color: rgb(75, 65, 55);  /* Dark brown for odd rows */
+        color: rgb(255, 235, 205);  /* Cream color for text to ensure visibility */
     }
     .taipy-table tr:nth-child(even) {
         background-color: rgba(50, 40, 30, 0.5);  /* Even darker brown for even rows */
-    }
-    .taipy-table {
         color: rgb(255, 235, 205);  /* Cream color for text */
     }
     /* ... other dark mode styles ... */
