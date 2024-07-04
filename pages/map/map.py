@@ -51,7 +51,7 @@ layout = {
         },
         {
             "x": 0.94,
-            "y": 0.8,  # Adjusted for more spacing
+            "y": 0.9,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Nano",  # Larger bullet point using Unicode
@@ -60,7 +60,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.7,  # Adjusted for more spacing
+            "y": 0.8,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Regional",  # Larger bullet point using Unicode
@@ -69,7 +69,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.6,  # Adjusted for more spacing
+            "y": 0.7,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Brewpub",  # Larger bullet point using Unicode
@@ -78,7 +78,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.55,  # Adjusted for more spacing
+            "y": 0.6,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Large",  # Larger bullet point using Unicode
@@ -87,7 +87,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.45,  # Adjusted for more spacing
+            "y": 0.5,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Planning",  # Larger bullet point using Unicode
@@ -96,7 +96,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.35,  # Adjusted for more spacing
+            "y": 0.4,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Bar",  # Larger bullet point using Unicode
@@ -105,7 +105,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.2,  # Adjusted for more spacing
+            "y": 0.3,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Contract",  # Larger bullet point using Unicode
@@ -114,7 +114,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.1,  # Adjusted for more spacing
+            "y": 0.2,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Proprietor",  # Larger bullet point using Unicode
@@ -123,7 +123,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.05,  # Adjusted for more spacing
+            "y": 0.1,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Closed",  # Larger bullet point using Unicode

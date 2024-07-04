@@ -17,6 +17,7 @@
     backdrop-filter: blur(10px);  /* Blur effect for the background */
     border: 1px solid rgba(140, 110, 80, 0.5);  /* Thin border matching primary color */
     border-radius: var(--border-radius-large);  /* Rounded corners for a friendly feel */
+    overflow: auto;
     /* ... other styles ... */
 }
 
