@@ -3,14 +3,14 @@ import taipy as tp
 
 # Import the Markdown pages
 from pages.root import root, selected_location, selector_location
-from pages.table.table import table_md
+from pages.table.xhtml_table import table
 from pages.dashboard.dashboard import dashboard_md
 from pages.map.map import map_md
 
 # Define the pages dictionary with the Markdown pages
 pages = {
     '/': root,
-    "List": table_md,
+    "List": table,
     "Dashboard": dashboard_md,
     "Map": map_md,
 }
