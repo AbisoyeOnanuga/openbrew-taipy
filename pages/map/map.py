@@ -41,7 +41,7 @@ layout = {
             "font": {"size": 24}
         },
         {
-            "x": 0.96,
+            "x": 0.939,
             "y": 1.0,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
@@ -50,7 +50,7 @@ layout = {
             "font": {"size": 16, "color": "#6f4e37"}
         },
         {
-            "x": 0.94,
+            "x": 0.939,
             "y": 0.9,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
@@ -59,7 +59,7 @@ layout = {
             "font": {"size": 16, "color": "#ffd700"}
         },
         {
-            "x": 0.96,
+            "x": 0.959,
             "y": 0.8,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
@@ -77,8 +77,8 @@ layout = {
             "font": {"size": 16, "color": "#ff4500"}
         },
         {
-            "x": 0.96,
-            "y": 0.6,  # Adjusted for more spacing
+            "x": 0.942,
+            "y": 0.55,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Large",  # Larger bullet point using Unicode
@@ -87,7 +87,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.5,  # Adjusted for more spacing
+            "y": 0.45,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Planning",  # Larger bullet point using Unicode
@@ -95,8 +95,8 @@ layout = {
             "font": {"size": 16, "color": "#008000"}
         },
         {
-            "x": 0.96,
-            "y": 0.4,  # Adjusted for more spacing
+            "x": 0.929,
+            "y": 0.35,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Bar",  # Larger bullet point using Unicode
@@ -105,7 +105,7 @@ layout = {
         },
         {
             "x": 0.96,
-            "y": 0.3,  # Adjusted for more spacing
+            "y": 0.2,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Contract",  # Larger bullet point using Unicode
@@ -113,8 +113,8 @@ layout = {
             "font": {"size": 16, "color": "#800080"}
         },
         {
-            "x": 0.96,
-            "y": 0.2,  # Adjusted for more spacing
+            "x": 0.969,
+            "y": 0.1,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Proprietor",  # Larger bullet point using Unicode
@@ -122,8 +122,8 @@ layout = {
             "font": {"size": 16, "color": "#ffa500"}
         },
         {
-            "x": 0.96,
-            "y": 0.1,  # Adjusted for more spacing
+            "x": 0.949,
+            "y": 0,  # Adjusted for more spacing
             "xref": "paper",
             "yref": "paper",
             "text": "● Closed",  # Larger bullet point using Unicode
