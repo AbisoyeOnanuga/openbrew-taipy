@@ -56,7 +56,7 @@ layout = {
             "yref": "paper",
             "text": "● Nano",  # Larger bullet point using Unicode
             "showarrow": False,
-            "font": {"size": 16, "color": "#ffd700"}
+            "font": {"size": 16, "color": "#c8b560"}
         },
         {
             "x": 0.959,
@@ -65,7 +65,7 @@ layout = {
             "yref": "paper",
             "text": "● Regional",  # Larger bullet point using Unicode
             "showarrow": False,
-            "font": {"size": 16, "color": "#0000ff"}
+            "font": {"size": 16, "color": "#add8e6"}
         },
         {
             "x": 0.96,
@@ -83,7 +83,7 @@ layout = {
             "yref": "paper",
             "text": "● Large",  # Larger bullet point using Unicode
             "showarrow": False,
-            "font": {"size": 16, "color": "#808080"}
+            "font": {"size": 16, "color": "#8A2BE2"}
         },
         {
             "x": 0.96,

@@ -48,10 +48,10 @@ def prepare_map_data(data):
 
     brewery_type_colors = {
         "micro": "#6f4e37",  # Brown color for most craft breweries
-        "nano": "#ffd700",  # Gold color for extremely small breweries
-        "regional": "#0000ff",  # Blue color for regional locations
+        "nano": "#c8b560",  # Gold color for extremely small breweries
+        "regional": "#add8e6",  # Blue color for regional locations
         "brewpub": "#ff4500",  # Orange color for brewpubs
-        "large": "#808080",  # Grey color (deprecated)
+        "large": "#8A2BE2",  # Grey color (deprecated)
         "planning": "#008000",  # Green color for breweries in planning
         "bar": "#808080",  # Grey color (deprecated)
         "contract": "#800080",  # Purple color for contract breweries
