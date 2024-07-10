@@ -15,6 +15,11 @@ pages = {
     "Map": map_md,
 }
 
+# Function to inject JavaScript into the HTML
+def inject_js(html_content):
+    script_tag = '<script src="/static/fix_links.js"></script>'
+    return html_content.replace('</body>', f'{script_tag}</body>')
+
 stylekit = {
     "color_primary": "rgb(140, 110, 80)",  # A rich brown color reminiscent of beer
     "color_secondary": "rgb(200, 180, 140)",  # A lighter complementary color
