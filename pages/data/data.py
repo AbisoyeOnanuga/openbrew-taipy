@@ -24,8 +24,6 @@ def fetch_data():
 
     # Add Google Maps and website links to the data with Markdown syntax
     #data['Website Link'] = data.apply(lambda row: f"[{row['Name']} Website]({row['Website']})" if row['Website'] else "No Website", axis=1)
-    #data['Google Maps'] = data.apply(lambda row: f"<a href='https://www.google.com/maps/search/?api=1&query={row['Latitude']},{row['Longitude']}' target='_blank'>View Map</a>", axis=1)
-    #data['Website Link'] = data.apply(lambda row: f"<a href='{row['Website']}' target='_blank'>{row['Name']} Website</a>" if row['Website'] else "No Website", axis=1)
     
     return data
 
