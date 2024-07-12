@@ -22,7 +22,6 @@ columns = [
     {"field": "Postal Code", "title": "Postal Code"},
     {"field": "Country", "title": "Country"},
     {"field": "Type", "title": "Type"},
-    {"field": "Website Link", "title": "Website", "type": "html"},
     {"field": "Website", "title": "Website"},
     {"field": "Google Maps", "title": "Google Maps", "type": "html"},
 ]
