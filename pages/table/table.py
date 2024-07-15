@@ -26,6 +26,8 @@ if 'Website' in data.columns:
 
 data = data.drop(columns=['Longitude', 'Latitude', 'Website', 'Google Maps'])
 
+# Convert the DataFrame to a dictionary for JavaScript
+data_dict = data.to_dict(orient='records')
 
 #data = data.drop(columns=['Google Maps Link'])
 #data = data.drop(columns=['Website'])
