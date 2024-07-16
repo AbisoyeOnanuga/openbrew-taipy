@@ -23,6 +23,11 @@ def on_change_brewery(state: State):
 # List of brewery names for the selector
 selector_brewery = list(data['Name'].unique())
 
+
+# Add Google Maps and Website links using HTML syntax
+data['Google Maps Link'] = data.apply(lambda row: f"<a href='https://www.google.com/maps/search/?api=1&query={row['Latitude']},{row['Longitude']}' target='_blank'>View Map</a>", axis=1)
+data['Website Link'] = data.apply(lambda row: f"<a href='{row['Website']}' target='_blank'>{row['Name']} Website</a>" if row['Website'] else "No Website", axis=1)
+
 # Generate options for the selector
 options = '\n'.join([f'<option value="{name}">{name}</option>' for name in selector_brewery])
 
