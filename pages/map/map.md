@@ -2,6 +2,7 @@
 
 <|{map_data}|chart|type=scattergeo|mode=markers|lat=Latitude|lon=Longitude|marker={marker}|text=text|layout={layout}|>
 
+
 The brewery type map displays various types of breweries across the United States. Each marker represents a specific type of brewery:
 
 - **Micro**: Most craft breweries. For example, Samual Adams is still considered a microbrewery.
