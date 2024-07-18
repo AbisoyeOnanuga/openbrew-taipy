@@ -112,33 +112,65 @@ dashboard = Html(f"""
     </style>
 </head>
 <body>
-    <h1>Brewery Dashboard</h1>
-    <select onchange="updateDashboard(this.value)">
-        {options}
+    <h1 class="color-primary">Brewery Dashboard</h1>
+    <label for="brewery-selector">Brewery Name:</label>
+    <select id="brewery-selector" onchange="onChangeBrewery()">
+        {% for brewery in selector_brewery %}
+        <option value="{{ brewery }}">{{ brewery }}</option>
+        {% endfor %}
     </select>
-    <!-- Insert dynamic content here -->
-    <div class="card-container">
+
+    <div id="brewery-info">
         <div class="card">
-            <p>Name:</p><p id="breweryName"><h2>{data_brewery.iloc[0]['Name']}</h2></p>
+            <h2 class="color-primary">Brewery Name</h2>
+            <p class="h2">{{ data_brewery.iloc[0]['Name'] }}</p>
         </div>
         <div class="card">
-            <p>Type:</p><p id="breweryType"><h2>{data_brewery.iloc[0]['Type']}</h2></p>
+            <h2 class="color-primary">Brewery Type</h2>
+            <p class="h2">{{ data_brewery.iloc[0]['Type'] }}</p>
         </div>
         <div class="card">
-            <p>Street:</p><p id="breweryStreet"><h2>{data_brewery.iloc[0]['Street']}</h2></p>
+            <h2 class="color-primary">Location</h2>
+            <p class="h2">{{ data_brewery.iloc[0]['Street'] }}, {{ data_brewery.iloc[0]['City'] }}, {{ data_brewery.iloc[0]['State'] }}</p>
         </div>
         <div class="card">
-            <p>Phone:</p><p id="breweryPhone"><h2>{data_brewery.iloc[0]['Phone']}</h2></p>
+            <h2 class="color-primary">Contact</h2>
+            <p class="h2">{{ data_brewery.iloc[0]['Phone'] }}</p>
         </div>
         <div class="card">
-            <p>Google Maps:</p><p id="breweryMaps"><h2>{data_brewery.iloc[0]['Google Maps']}</h2></p>
+            <h2 class="color-primary">Google Maps</h2>
+            <p class="h2">{{ data_brewery.iloc[0]['Google Maps Link'] }}</p>
         </div>
         <div class="card">
-            <p>Website Link:</p><p id="breweryWebsite"><h2>{data_brewery.iloc[0]['Website Link']}</h2></p>
+            <h2 class="color-primary">Website</h2>
+            <p class="h2">{{ data_brewery.iloc[0]['Website Link'] }}</p>
         </div>
-        <!-- Add other relevant information here -->
     </div>
-    <!-- More dynamic content -->
+
+    <script>
+        let data = {{ data_dict | tojson }};
+        let selectedBrewery = "{{ selected_brewery }}";
+
+        function onChangeBrewery() {
+            const selector = document.getElementById('brewery-selector');
+            selectedBrewery = selector.value;
+            updateBreweryInfo();
+        }
+
+        function updateBreweryInfo() {
+            const brewery = data.find(b => b.Name === selectedBrewery);
+            document.querySelector('#brewery-info .card:nth-child(1) .h2').innerText = brewery.Name;
+            document.querySelector('#brewery-info .card:nth-child(2) .h2').innerText = brewery.Type;
+            document.querySelector('#brewery-info .card:nth-child(3) .h2').innerText = `${brewery.Street}, ${brewery.City}, ${brewery.State}`;
+            document.querySelector('#brewery-info .card:nth-child(4) .h2').innerText = brewery.Phone;
+            document.querySelector('#brewery-info .card:nth-child(5) .h2').innerHTML = brewery['Google Maps Link'];
+            document.querySelector('#brewery-info .card:nth-child(6) .h2').innerHTML = brewery['Website Link'];
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateBreweryInfo();
+        });
+    </script>
 </body>
 </html>
 """)
