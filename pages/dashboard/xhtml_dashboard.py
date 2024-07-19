@@ -39,39 +39,11 @@ data_json = json.dumps(data.to_dict(orient='records'))
 # Define the XHTML dashboard
 dashboard = Html(f"""
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Brewery Dashboard</title>
-    <script type="text/javascript">
-        function updateDashboard(selectedName) {{
-        // Make an AJAX request to fetch brewery data
-        fetch('https://api.openbrewerydb.org/v1/breweries?by_country=united%20states')
-            .then(response => response.json())
-            .then(data => {{
-                // Find the selected brewery data
-                const selectedBrewery = data.find(brewery => brewery.name === selectedName);
-
-                // Get references to the card elements
-                const nameElement = document.getElementById("breweryName");
-                const typeElement = document.getElementById("breweryType");
-                const streetElement = document.getElementById("breweryStreet");
-                const phoneElement = document.getElementById("breweryPhone");
-                const mapsElement = document.getElementById("breweryMaps");
-                const websiteElement = document.getElementById("breweryWebsite");
-
-                // Update card content
-                nameElement.textContent = selectedBrewery.name;
-                typeElement.textContent = selectedBrewery.brewery_type;
-                streetElement.textContent = selectedBrewery.street;
-                phoneElement.textContent = selectedBrewery.phone;
-                mapsElement.innerHTML = `<a href="${{selectedBrewery['google_maps_link']}}">${{selectedBrewery['google_maps_link']}}</a>`;
-                websiteElement.innerHTML = `<a href="${{selectedBrewery.website_url}}">${{selectedName}} Website</a>`;
-            }})
-            .catch(error => console.error('Error fetching data:', error));
-    }}
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Your updated CSS styles */
         :root {{
             --border-radius-small: calc(var(--border-radius) / 2);
             --border-radius-large: calc(var(--border-radius) * 2);
@@ -83,7 +55,7 @@ dashboard = Html(f"""
 
         .card-container {{
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 2x3 grid */
+            grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
             gap: 20px; /* Adjust spacing between cards */
         }}
 
@@ -115,41 +87,39 @@ dashboard = Html(f"""
     <h1 class="color-primary">Brewery Dashboard</h1>
     <label for="brewery-selector">Brewery Name:</label>
     <select id="brewery-selector" onchange="onChangeBrewery()">
-        {% for brewery in selector_brewery %}
-        <option value="{{ brewery }}">{{ brewery }}</option>
-        {% endfor %}
+        {''.join([f'<option value="{brewery}">{brewery}</option>' for brewery in selector_brewery])}
     </select>
 
-    <div id="brewery-info">
+    <div id="brewery-info" class="card-container">
         <div class="card">
             <h2 class="color-primary">Brewery Name</h2>
-            <p class="h2">{{ data_brewery.iloc[0]['Name'] }}</p>
+            <p class="h2">{data_brewery.iloc[0]['Name']}</p>
         </div>
         <div class="card">
             <h2 class="color-primary">Brewery Type</h2>
-            <p class="h2">{{ data_brewery.iloc[0]['Type'] }}</p>
+            <p class="h2">{data_brewery.iloc[0]['Type']}</p>
         </div>
         <div class="card">
             <h2 class="color-primary">Location</h2>
-            <p class="h2">{{ data_brewery.iloc[0]['Street'] }}, {{ data_brewery.iloc[0]['City'] }}, {{ data_brewery.iloc[0]['State'] }}</p>
+            <p class="h2">{data_brewery.iloc[0]['Street']}, {data_brewery.iloc[0]['City']}, {data_brewery.iloc[0]['State']}</p>
         </div>
         <div class="card">
             <h2 class="color-primary">Contact</h2>
-            <p class="h2">{{ data_brewery.iloc[0]['Phone'] }}</p>
+            <p class="h2">{data_brewery.iloc[0]['Phone']}</p>
         </div>
         <div class="card">
             <h2 class="color-primary">Google Maps</h2>
-            <p class="h2">{{ data_brewery.iloc[0]['Google Maps Link'] }}</p>
+            <p class="h2">{data_brewery.iloc[0]['Google Maps Link']}</p>
         </div>
         <div class="card">
             <h2 class="color-primary">Website</h2>
-            <p class="h2">{{ data_brewery.iloc[0]['Website Link'] }}</p>
+            <p class="h2">{data_brewery.iloc[0]['Website Link']}</p>
         </div>
     </div>
 
     <script>
-        let data = {{ data_dict | tojson }};
-        let selectedBrewery = "{{ selected_brewery }}";
+        let data = {data_dict};
+        let selectedBrewery = "{selected_brewery}";
 
         function onChangeBrewery() {
             const selector = document.getElementById('brewery-selector');
