@@ -5,28 +5,6 @@ This project demonstrates how to build a multipage web application using Taipy t
 ## Table of Contents
 1. Setup Instructions
 2. Application Structure
-```bash
-    .
-    ├── main.py
-    ├── pages
-    │   ├── data
-    │   │   ├── data.py
-    │   │   └── README.md
-    │   ├── table
-    │   │   ├── table.py
-    │   │   └── README.md
-    │   ├── dashboard
-    │   │   ├── dashboard.py
-    │   │   └── README.md
-    │   ├── map
-    │   │   ├── map.py
-    │   │   └── README.md
-    │   ├── root
-    │   │   ├── root.py
-    │   │   └── README.md
-    ├── styles.css
-    └── README.md
-```
 3. Detailed Component Guides
 
 ## Setup Instructions
