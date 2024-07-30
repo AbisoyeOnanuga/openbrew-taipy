@@ -2,13 +2,6 @@
 ## Overview
 The table.py file handles the table view of the Brewery Data Exploration app. It displays a comprehensive list of breweries with various details.
 
-## Markdown for Table View
-```markdown
-    # **Breweries List**{: .color-primary}
-
-    <|{data}|table|columns=columns|page_size=10|page_size_options=[10, 50, 100]|filter=True|>
-```
-
 ## Code Explanation
 ### table.py
 ```python
@@ -50,4 +43,11 @@ The table.py file handles the table view of the Brewery Data Exploration app. It
 
     # Create a Markdown control and set the content to the Taipy table syntax
     table_md = Markdown("pages/table/table.md")
+```
+
+## Markdown for Table View
+```markdown
+    # **Breweries List**{: .color-primary}
+
+    <|{data}|table|columns=columns|page_size=10|page_size_options=[10, 50, 100]|filter=True|>
 ```
