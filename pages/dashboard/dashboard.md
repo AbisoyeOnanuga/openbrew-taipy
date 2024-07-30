@@ -32,7 +32,7 @@
 
 <|card|
 **Google Maps**{: .color-primary}
-<|{data_brewery.iloc[0]['Google Maps Link']}|text|class_name=h2|>
+<|{data_brewery.iloc[0]['Google Maps']}|text|class_name=h2|>
 |>
 
 <|card|
@@ -40,5 +40,3 @@
 <|{data_brewery.iloc[0]['Website']}|text|class_name=h2|>
 |>
 |>
-
-[brew](https://brew.com)
