@@ -11,9 +11,6 @@ print(data.columns)
 # Fetch the data
 data = fetch_data()
 
-# Add an ID column for easier selection in JavaScript
-data['id'] = data.index
-
 # Convert the DataFrame to a dictionary for JavaScript
 data_dict = data.to_dict(orient='records')
 
@@ -24,13 +21,9 @@ if 'Website' in data.columns:
     data['Google Maps Link'] = data.apply(lambda row: f'<a href="{row["Google Maps"]}" target="_blank">Google Maps</a>', axis=1)
 # Remove the original website URL column
 
-data = data.drop(columns=['Longitude', 'Latitude', 'Website', 'Google Maps'])
-
-# Convert the DataFrame to a dictionary for JavaScript
-data_dict = data.to_dict(orient='records')
+data = data.drop(columns=['Longitude', 'Latitude', 'Google Maps Link', 'Website Link'])
 
 #data = data.drop(columns=['Google Maps Link'])
-#data = data.drop(columns=['Website'])
 
 # Define the columns for the table
 columns = [
@@ -41,10 +34,8 @@ columns = [
     {"field": "Postal Code", "title": "Postal Code"},
     {"field": "Country", "title": "Country"},
     {"field": "Type", "title": "Type"},
-    {"field": "Website Link", "title": "Website", "type": "html"},
-    {"field": "Google Maps Link", "title": "Google Maps", "type": "html"},
-    {"field": "Website", "title": "Website", "type": "html", "class": lambda row: f'website-{row["id"]}'},
-    {"field": "Google Maps", "title": "Google Maps", "type": "html", "class": lambda row: f'maps-{row["id"]}'},
+    {"field": "Website", "title": "Website", "type": "html"},
+    {"field": "Google Maps", "title": "Google Maps", "type": "html"}
 ]
 
 # Create a Markdown control and set the content to the Taipy table syntax
