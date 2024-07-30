@@ -15,15 +15,14 @@ This project demonstrates how to build a multipage web application using Taipy t
 - Pandas
 - Requests
 
-### Installation
-1. Clone the repository:
-```bash
-    git clone <repository-url>
-    cd <repository-directory>
-```
+### Getting Started
+To get started with OpenBrew-Taipy, clone this repository and install the required dependencies.
 
-2. Install the required libraries:
-`pip install taipy pandas requests`
+```bash
+git clone https://github.com/your-username/openbrew-taipy.git
+cd openbrew-taipy
+pip install -r requirements.txt
+```
 
 ## Application Structure
 ```bash
@@ -117,13 +116,3 @@ This is the main entry point of the application. It sets up the pages and the st
 - **Table Page**: A comprehensive table listing all the breweries with sortable columns.
 - **Dashboard Page**: Visual analytics of brewery data including charts and graphs.
 - **Map Page**: An interactive map displaying the geographical distribution of breweries.
-
-## Getting Started
-
-To get started with OpenBrew-Taipy, clone this repository and install the required dependencies.
-
-```bash
-git clone https://github.com/your-username/openbrew-taipy.git
-cd openbrew-taipy
-pip install -r requirements.txt
-```
