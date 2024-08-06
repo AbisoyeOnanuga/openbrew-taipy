@@ -6,7 +6,7 @@ This project demonstrates how to build a multipage web application using Taipy t
 1. [Setup Instructions](#setup-instructions)
 2. [Application Structure](#application-structure)
 3. [Detailed Component Guides](#detailed-component-guides)
-4. [Taipy](https://github.com/Avaiga/taipy)
+4. [Taipy's Github](https://github.com/Avaiga/taipy)
 
 ## Setup Instructions
 
