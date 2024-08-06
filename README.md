@@ -1,11 +1,12 @@
 # Brewery Data Exploration with Taipy
 ## Overview
-This project demonstrates how to build a multipage web application using Taipy to explore data from the Open Brewery DB API at <a href="https://openbrewerydb.org">Open Brewery DB</a>. The app includes a list view, a dashboard, and a map view, all styled with custom CSS and Taipy’s Stylekit.
+This project demonstrates how to build a multipage web application using Taipy to explore data from the Open Brewery DB API at <a href="https://openbrewerydb.org">Open Brewery DB</a>. The app includes a list view, a dashboard, and a map view, all styled with custom CSS and <a href="https://github.com/Avaiga/taipy">Taipy’s</a> Stylekit.
 
 ## Table of Contents
 1. [Setup Instructions](#setup-instructions)
 2. [Application Structure](#application-structure)
 3. [Detailed Component Guides](#detailed-component-guides)
+4. [Taipy](https://github.com/Avaiga/taipy)
 
 ## Setup Instructions
 
