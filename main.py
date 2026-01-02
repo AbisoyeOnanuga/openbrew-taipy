@@ -10,7 +10,7 @@ from pages.map.map import map_md
 # Define the pages dictionary with the Markdown pages
 pages = {
     '/': root,
-    "Table": table_md,
+    "List": table_md,
     "Dashboard": dashboard_md,
     "Map": map_md,
 }
