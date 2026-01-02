@@ -10,7 +10,7 @@ from pages.map.map import map_md
 # Define the pages dictionary with the Markdown pages
 pages = {
     '/': root,
-    "List": table_md,
+    "Table": table_md,
     "Dashboard": dashboard_md,
     "Map": map_md,
 }
@@ -39,6 +39,5 @@ stylekit = {
 gui_multi_pages = Gui(pages=pages, css_file="styles.css")
 
 if __name__ == '__main__':
-    tp.Core().run()
     
     gui_multi_pages.run(title="Breweries in United States", stylekit=stylekit)
