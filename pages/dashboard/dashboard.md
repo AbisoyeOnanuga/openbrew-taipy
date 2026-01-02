@@ -1,7 +1,5 @@
 # **Brewery Dashboard**{: .color-primary} Information
 
-<center><|{navbar}|raw|></center>
-
 <|{selected_brewery}|selector|lov={selector_brewery}|on_change=on_change_brewery|dropdown|label=Brewery Name|>
 
 <br/>

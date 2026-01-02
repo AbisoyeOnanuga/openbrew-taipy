@@ -1,5 +1,4 @@
 # **US Breweries**{: .color-primary} Map
-<center><|{navbar}|raw|></center>
 
 <|{map_data}|chart|type=scattergeo|mode=markers|lat=Latitude|lon=Longitude|marker={marker}|text=text|layout={layout}|>
 <br/><br/>
